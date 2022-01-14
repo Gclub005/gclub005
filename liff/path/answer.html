@@ -34,7 +34,7 @@
       document.getElementById("decodedIDToken").append(liff.getDecodedIDToken().email)
     }
     async function main() {
-      await liff.init({ liffId: "1656805695-3KlM5zM6" })
+      await liff.init({ liffId: "YOUR-LIFF-ID" })
       if (liff.isLoggedIn()) {
         getUserProfile()
       } else {
