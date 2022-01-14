@@ -66,27 +66,13 @@
     }
 
     async function getUserProfile() {
-      const profile = await liff.getProfile()
-      Document
     }
 
     function getEnvironment() {
-      Document.getElementById("os").append(liff.getOS())
-      Document.getElementById("Language").append(liff.getLanguage())
-      Document.getElementById("version").append(liff.getVersion())
-      Document.getElementById("accessToken").append(liff.getAccessToken())
-      Document.getElementById("isInclient").append(liff.getisInclient())
-      if (liff.isInClient()) {
-        Document.getElementById("btnLogOut").style.display = "none"
-      } else {
-        Document.getElementById("btnMsg").style.display = "none"
-        Document.getElementById("btnScanCode").style.display = "none"
-        Document.getElementById("btnClose").style.display = "none"
-      }
     }
 
     async function main() {
-      await liff.init({ liffId: "1656805695-3KlM5zM6" })
+       await liff.init({ liffId: "1656805695-3KlM5zM6" })
       // getEnvironment()
       // getUserProfile()
       // getContext()
